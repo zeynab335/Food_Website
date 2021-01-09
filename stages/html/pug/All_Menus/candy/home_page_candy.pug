@@ -1,0 +1,59 @@
+mixin candy_fun(img_src)
+    each item in img_src
+        .col-lg-4.col-sm-6
+            .image
+                .over
+                <img #{item}>
+                
+                .info 
+                    // start left
+                    .left
+                        button.btn.btn-food-details.paragh_font(type='button') View Details
+                    .clearfix
+                    // end left
+                        
+                    // start right
+                    .right
+                        i.far.fa-heart.fa-2x.icon_like
+                    .clearfix
+                    // end right
+        .clearfix                
+
+// start styesheet file 
+include ../../layout/stylesheet.pug
++styleSheet_fun('candy Menu' ,'All_Menu_css/All_Menu_css')
+body
+// end styesheet file 
+
+.candy_page
+    h3.heading_font.text-center Candy Menus
+    hr
+    .clearfix 
+
+    .candy_content.menu_content
+        .row
+            -var img_srcs = ["src='../../images/candy/1.jpeg'title='Choclate Cake' " , "src='../../images/candy/2.jpeg'title='Choclate Cake'" ,  "src='../../images/candy/3.jpeg' title='Choclate Cake'"];
+            +candy_fun(img_srcs)
+
+            -var img_srcs = ["src='../../images/candy/4.jpg'title='Choclate Cake' " , "src='../../images/candy/5.jpg'title='Choclate Cake'" ,  "src='../../images/candy/6.jpg' title='Choclate Cake'"];
+            +candy_fun(img_srcs)
+        
+        
+
+
+
+
+
+// start options  page
+include ../../layout/options.pug
+// end options page
+
+
+// start scripts  page
+
+include ../../layout/scripts.pug
+script(src="../../js/food.js")
+
+// end scripts page
+
+

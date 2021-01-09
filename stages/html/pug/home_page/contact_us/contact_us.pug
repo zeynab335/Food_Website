@@ -1,0 +1,60 @@
+.Contact_us#contact
+    // start Contact_us header
+    include ../../layout/stylesheet.pug
+    +page-header("Contact us")
+    // end Contact_us header
+    
+    ///////////////////////////////////////
+    
+    // start Contact_us content
+    .container
+        h2.heading_font.text-center For Any Inquiries Contact Me
+        .row
+            .col-lg-6.col-xs.Contact_us_col.animation.left
+
+                // strat form of contact 
+                form
+
+                    .form-group
+                        input.form-control.input-lg-6.input-xs.input_contact.form_acion(type="text" placeholder="Username" required) 
+                        input.form-control.input-lg-6.input-xs.input_contact.form_acion(type="password" placeholder="******" required)
+                    
+                    .form-group
+                        input.form-control.input-lg.input-xs.input_contact.form_acion(type="email" placeholder="kkk@***.com" required)
+                    
+                    .form-group
+                        textarea.form-control.input-lg.input-xs.input_contact.form_acion(rows='4' placeholder="type here your questation:--" required)
+                    
+                    button.btn.btn-contact.btn-lg.btn-xs.btn-block.paragh_font(type="submit")  Send Now
+
+                // end form of contact 
+                /////////////////////////////////////////////////////////
+
+            //start map 
+            .col-lg-6.col-xs.Contact_us_col.animation.right
+                .map
+                    iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3451.520819785721!2d31.32765331511649!3d30.10790698185926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145815949806c875%3A0x6e77b1d18ca97a33!2sLucky%20Tucky!5e0!3m2!1sen!2seg!4v1595820871068!5m2!1sen!2seg" width="100%" height="400px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0")
+            //start map
+
+
+
+// end contact-us 
+
+
+// start copywrite
+
+.copywrite
+    .container
+        .row
+            .footer-copyright.text-center.col-lg-12
+                h3.heading_font © 2020 Copyright :  LukyTurkey
+
+            .col-lg-12.text-center
+                i.fab.fa-facebook.contact_icons
+                i.fab.fa-instagram.contact_icons
+                i.fab.fa-twitter.contact_icons
+                i.fab.fa-facebook-messenger.contact_icons
+
+// end copywrite
+
+

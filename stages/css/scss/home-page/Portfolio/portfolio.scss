@@ -1,0 +1,69 @@
+
+
+// start portfolio
+.Portfolio{
+    margin: 50px 0 25px 2%;
+    padding: 10px;
+    width: 97.5%;
+
+    //height: 80vh;
+    //background-color: blueviolet;
+    
+    
+    .portfolio_col{
+        padding: 0;
+        perspective: 600px;
+        position: relative;
+        
+        // start parts of portfolio 
+        .portfolio_part{
+            transition: all 0.8s;
+            cursor: pointer;
+            .overlay{
+                background-color: rgba(0, 0, 0, 0.3);
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 90%;
+                height: 550px;
+                color: white;
+                .intro{
+                    text-align: center;
+                    transform: translateY(50%);
+                    p.paragh_font{font-size: 30px}
+                    input.btn-portofo{
+                        background:none;
+                        border-color: rgb(224, 224, 224);
+                        //width: 30%;
+                        font-size: 25px;
+                        padding: 5px 15px 5px 15px;
+                        font-weight: 100;
+                        &:hover{
+                            background-color: #262727 ;
+                            color: white;
+                            border-color: #1e1e1f ;
+
+                        }
+                    }
+                }
+                
+            }
+            .image{
+                img{
+                    width: 90%;
+                    height: 550px;
+                    margin-bottom: 35px;
+                    box-shadow: 5px 4px 8px 1px #66686a;
+                    
+                }
+                
+            }
+            &:hover{
+                opacity: 1;
+                transform: translate3d(0,0,25px);
+            }
+        }
+        // end parts of portfolio
+    }
+    
+}

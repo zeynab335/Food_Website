@@ -1,0 +1,20 @@
+mixin  menu(header_menu , menu_class, images_src)
+    .menu_content(class = menu_class  , id = menu_class)
+        +page-header(header_menu)
+        .container-fluid
+            .row
+                each item in images_src 
+                    .col-lg-4.col-sm-12
+                        .image
+                            .over
+                            <img #{item} >
+                            
+                            .info 
+                                .left.backgro_btn.animation.left
+                                    button.btn.btn-food-details.paragh_font(type='button') View Details
+                                .clearfix
+                                .right
+                                    i.far.fa-heart.fa-2x.icon_like
+                                .clearfix    
+                                    
+                        

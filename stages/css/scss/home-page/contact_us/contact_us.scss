@@ -1,0 +1,51 @@
+.Contact_us{
+    padding-top: 25px;
+    .Contact_us_col{
+        margin-top: 20px;
+        .form-group:nth-child(3){
+            margin-bottom: 0;
+        }
+        h2{
+            margin-top: 20px;
+            margin-bottom: 25px;
+        }
+        .input_contact{
+            margin-top: 15px;
+            border-radius: 0;
+            background-color:$sec-color;
+            border-color: $sec-color;
+            padding: 25px;
+
+        }
+        .btn-contact{
+            background-color: $main-color;
+            border-radius: 0;
+            color: white;
+            padding: 12px;
+            margin-bottom: 25px;
+            margin-top: 0;
+        }
+
+        // start style of map
+        .map{
+            margin-top: 18px;
+        }
+        // end style of map
+    }
+}
+
+// end  Contact_us
+
+
+// start copywrite
+.copywrite{
+    background-color: $main-color;
+    color: white;
+    padding: 15px 0 15px 0;
+    .contact_icons{
+        margin-left: 15px;
+    }
+}
+
+
+// end copywrite

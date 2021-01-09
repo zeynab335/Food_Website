@@ -1,0 +1,74 @@
+.All_options{
+    position: fixed;
+    top: 10vh;
+    left: 0;
+    width: 25vh;
+    color: white;
+    cursor: pointer;
+
+    > div{
+
+        // start dark_option
+        &.dark_option{
+            width: 5vh;
+            padding: 8px 5px 8px 5px ;
+            text-align: center;
+            margin-bottom: 10px;
+            background-color: $main-color ;
+
+            &.active{
+                background-color: white;
+                color: $main-color;
+            }
+        }
+        // end dark_option
+
+        /////////////////////////////////////
+        // start color_option
+        &.color_option{
+            li{
+                background-color: $sec-color;
+                width: 25px;
+                height: 25px;
+                margin-left: 3px;
+                display: inline-block;
+                margin-bottom: 10px;
+                opacity: 0.6;
+                &:first-of-type{
+                    opacity: 1
+                }
+            }
+
+            .color_option_icon{
+                position: absolute;
+                width: 5vh;
+                color: $main-color;
+                left: 0;
+                padding: 6px;
+                text-align: center;
+                color: white;
+                background-color: $main-color;
+                transition: all 0.8s;
+
+                &.active{
+                    left: 255px;
+                }                
+            }
+
+            .color_option_content{
+                position: relative;
+                transition: all 0.8s;
+                left: -255px;
+                background-color: $main-color;
+
+                &.active{
+                    left: 0;
+                }
+
+            }
+        }
+
+
+        // end color_option
+    }
+}

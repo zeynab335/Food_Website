@@ -1,0 +1,31 @@
+.reservation#reserv
+    .overlay
+        .container
+            h1.heading_font  Our Reservation
+            .row
+                .col-lg.col-xs
+                    .recerv_content(data-value = 'Date')
+                        p.paragh_font Date
+                        i.fas.fa-sort-up.icon_toggle
+                    .Date
+                        input.form-control(type='date')
+                .col-lg.col-xs
+                    .recerv_content(data-value = 'Time')
+                        p.paragh_font Time
+                        i.fas.fa-sort-up.icon_toggle
+                    .Time       
+                        input.form-control(type='time')
+
+                .col-lg.col-xs
+                    .recerv_content(data-value = 'party')  
+                        p.paragh_font  Party Size
+                        i.fas.fa-sort-up.icon_toggle
+                    .party  
+                        select(name='Party_Size ')
+                            option.paragh_font One Person
+                            option.paragh_font Two Person
+                            option.paragh_font Three Person
+                            option.paragh_font Four Person
+                            option.paragh_font Five Person
+                            option.paragh_font Six Person
+            button.btn.btn_conf_rece.paragh_font.backgro_btn Confirm

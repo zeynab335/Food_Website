@@ -1,0 +1,86 @@
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//start my framework
+//#262727 
+$main-color : #262727;
+$sec-color : #dddcd8;
+
+
+// strat heading and paragraph style
+
+.heading_font{
+    font: italic bold 25px auto;
+    font-family: 'Playfair Display', serif;
+}
+
+.paragh_font{
+    font: italic bold 20px auto;
+    font-family: 'Playfair Display', serif;
+}
+
+.transation{
+    transition: all 0.5s;
+}
+
+.dark-background{
+    background-color: #1c1c1c !important;
+    color: white !important;
+}
+.dark-items{
+    background-color: white !important;
+    color: #1c1c1c;
+}
+// end heading and paragraph style
+
+/////////////////////////////////////////
+
+// start  page_header
+.page_header{
+    width: 100%;
+    margin-bottom: 50px;
+    
+    hr{
+        width: 25%;
+        display: inline-block;
+        background-color: black;
+        &.left{float: left; transform: translateX(25%);}
+        &.right{float: right; transform: translateX(-25%);}
+    }
+    p{margin-left: 20%;;display: inline-block; font-size: 35px;}
+}
+// end  page_header
+
+
+
+
+
+
+//end my framework
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+// strat animations page
+@import 'animation/animation.scss';
+// end animation page
+
+// strat animations page
+@import 'navbar/nav.scss';
+// end animation page
+
+
+// strat animations page
+@import 'options/options.scss';
+// end animation page
+
+@media (max-width : 575px){
+    // start page header of all pages in smal and extra small mediia
+    .page_header p {
+        margin-left: 15% !important;
+        font-size: 25px !important;
+    }
+    // end page header of all pages in smal and extra small mediia
+    .paragh_font{
+        font-size: 15px
+    }
+    
+}

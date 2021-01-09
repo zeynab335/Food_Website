@@ -1,0 +1,54 @@
+
+// start styesheet file 
+include ../../layout/stylesheet.pug
++styleSheet_fun('Food Menu' ,'All_Menu_css/All_Menu_css')
+body
+// end styesheet file 
+
+.food_page
+    h3.heading_font.text-center Food Menus
+    hr
+
+    .food_all_menus.all_menus 
+        .container
+            .row
+                .col-lg.col-sm-6 
+                    .image_menu.pizza_image.animation.left(data-value = "pizza")
+                        img(src="../../images/food/1.jpeg", alt="")
+                        .info
+                            p.paragh_font View More
+                
+                .col-lg.col-sm-6 
+                    .image_menu.burger_image(data-value = "burger")
+                        img(src="../../images/food/2.jpeg", alt="")
+                        .info.two 
+                            p.paragh_font View More
+                .col-lg.col-sm-6 
+                    .image_menu.pasta_image.animation.right(data-value = "pasta")
+                        img(src="../../images/food/3.jpeg", alt="")
+                        .info.three
+                            p.paragh_font View More
+
+include ../mixin_All_Menus.pug
+- var pizza_array = ["src='../../images/food/pizza/1.jpeg' title='Cheese Pizza'data-large='30' data-meduim='15'","src='../../images/food/pizza/2.jpeg'title='New Pizza'data-large='30' data-meduim='15'","src='../../images/food/pizza/3.jpeg'title='photo one'data-large='40' data-meduim='20'","src='../../images/food/pizza/4.jpeg'title='Classic Pizza'data-large='40' data-meduim='20'","src='../../images/food/pizza/5.jpeg'title='New Recipe Pizzas'data-large='45' data-meduim='25'","src='../../images/food/pizza/6.jpeg'title='big pizza'data-large='45' data-meduim='25'"]
+- var burger_array = ["src='../../images/food/burger/1.jpeg' title='Cheese burger'data-large='30' data-meduim='15'","src='../../images/food/burger/2.jpeg'title='New burger'data-large='30' data-meduim='15'","src='../../images/food/burger/3.jpeg'title='big burger'data-large='40' data-meduim='20'","src='../../images/food/burger/4.jpeg'title='Classic burger'data-large='40' data-meduim='20'","src='../../images/food/burger/5.jpg'title='New Recipe burger'data-large='45' data-meduim='25'"]
+- var pasta_array =["src='../../images/food/pasta/1.jpeg' title='Cheese pasta'data-large='30' data-meduim='15'","src='../../images/food/pasta/2.jpeg'title='New Pizza'data-large='30' data-meduim='15'","src='../../images/food/pasta/3.jpeg'title='photo one'data-large='40' data-meduim='20'","src='../../images/food/pasta/4.jpeg'title='Classic Pizza'data-large='40' data-meduim='20'","src='../../images/food/pasta/5.jpeg'title='New Recipe pasta'data-large='45' data-meduim='25'"]
+
++menu("Pizza Menu" , "pizza",pizza_array)
++menu("Burger Menu" , "burger",burger_array)
++menu("Pasta Menu" , "pasta" , pasta_array)
+
+
+// start options  page
+include ../../layout/options.pug
+// end options page
+
+
+// start scripts  page
+
+include ../../layout/scripts.pug
+script(src="../../js/food.js")
+
+// end scripts page
+
+

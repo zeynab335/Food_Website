@@ -1,0 +1,47 @@
+.All_Menus#Menu
+    // start portfolio header
+    include ../../layout/stylesheet.pug
+    +page-header("Menus")
+
+    // end portfolio header
+    
+    // start content of ALl menus
+    .container
+        .content_menu
+            .row
+                .col-lg-4.menu_col
+                    .menus_links
+                        h1.transation.paragh_font(data-link='food_menu') Food 
+                        h1.transation.paragh_font(data-link='drink_menu') Drink 
+                        h1.transation.paragh_font(data-link='candy_menu') Candy 
+                .col-lg-8.menu_col
+                    .menus_content_link
+                        // start food_menu
+                        #food_menu.food_menu.active
+                            h3.paragh_font Food Menu
+                            p.paragh_font Pizza 
+                            p.paragh_font Sandwitch
+                            p.paragh_font Fast-Food
+                        // end food_menu   
+                        
+                        // start drink_menu
+                        #drink_menu.drink_menu
+                            h3.paragh_font Drink Menu
+                            p.paragh_font All Hot drinks
+                            p.paragh_font juices
+                            p.paragh_font ice-creams
+
+
+                        // end drink_menu    
+
+                        // start candy_menu
+                        #candy_menu.candy_menu
+                            h3.paragh_font Candy Menu
+                            p.paragh_font Cakes
+                            p.paragh_font Cookies
+                            p.paragh_font Doughnuts
+                        // end candy_menu    
+                        
+
+
+

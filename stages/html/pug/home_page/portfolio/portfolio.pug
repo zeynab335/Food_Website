@@ -1,0 +1,45 @@
+.Portfolio#portfo
+    // start portfolio header
+    include ../../layout/stylesheet.pug
+    +page-header("Portfolio")
+    // end portfolio header
+    
+    ///////////////////////////////////////
+    
+    // start Portfolio content
+    .container-fluid
+        .row
+            .col-lg-4.col-md-6.col-sm-12.col-xs.portfolio_col.animation.left
+                .food.portfolio_part
+                    .overlay
+                        .intro
+                            p.paragh_font Food &amp; Serve 
+                            a(href='../food/food.html', target='_self')
+                                input.btn-danger.btn-portofo.paragh_font.transation(type='button', value='View More')
+                    .image
+                        img.img-responsive(src='../../images/food/1.jpeg')
+            .clearfix 
+
+            .col-lg-4.col-md-6.col-sm-12.col-xs.portfolio_col
+                .drink.portfolio_part
+                    .overlay
+                        .intro
+                            p.paragh_font Drink &amp; Serve 
+                            a(href='../drink/drink.html', target='_self')
+                                input.btn-danger.btn-portofo.paragh_font.transation(type='button', value='View More')
+                    .image
+                        img.img-responsive(src='../../images/drink/1.jpeg')
+            .clearfix 
+
+            .col-lg-4.col-md-6.col-sm-12.col-xs.portfolio_col.animation.right
+                .candy.portfolio_part
+                    .overlay
+                        .intro
+                            p.paragh_font Candy &amp; Serve 
+                            a(href='../candy/candy.html', target='_self')
+                                input.btn-danger.btn-portofo.paragh_font.transation(type='button', value='View More')
+                    .image
+                        img.img-responsive(src='../../images/candy/1.jpeg')                
+.clearfix                    
+
+

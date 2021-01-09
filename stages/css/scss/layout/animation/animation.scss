@@ -1,0 +1,63 @@
+
+.animation{
+    animation-duration: 1.5s;
+    transition-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    transition: all 0.2s;
+}
+
+
+.animation.left{ animation-name: animationLeft}
+
+.animation.top{animation-name: animationFromtop}
+
+.animation.right{animation-name: animationFromright}
+
+.animation.bottom{animation-name: animationFromBottom}
+
+
+/* keyframes*/
+
+@keyframes animationFromBottom{
+    0%{
+        opacity: 0;
+        transform: translate3d(0 ,100%, 0);   
+    }
+    100%{
+        opacity: 1;
+        transform: translate3d(0,0, 0);      
+    }
+}
+
+
+@keyframes animationFromtop{
+    0%{
+        opacity: 0;
+        transform: translate3d(0 ,-100%, 0);  
+    }
+    100%{
+        opacity: 1;
+        transform: translate3d(0,0, 0);   
+    }
+}
+
+
+@keyframes animationFromright{
+    0%{
+        opacity: 0;
+        transform: translate3d(100% , 0, 0);    }
+    100%{
+        opacity: 1;
+        transform: translate3d(0,0, 0);       }
+}
+
+
+
+@keyframes animationLeft{
+    0%{
+        opacity: 0;
+        transform: translate3d(-100% ,0, 0);    }
+    100%{
+        opacity: 1;
+        transform: translate3d(0,0, 0);       }
+}

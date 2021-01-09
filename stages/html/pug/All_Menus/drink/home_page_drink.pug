@@ -1,0 +1,55 @@
+
+// start styesheet file 
+include ../../layout/stylesheet.pug
++styleSheet_fun('Drink Menu' ,'All_Menu_css/All_Menu_css')
+body
+// end styesheet file 
+
+.drink_page
+    h3.heading_font.text-center Drink Menus
+    hr
+
+    .drink_all_menus.all_menus 
+        .container
+            .row
+                .col-lg.col-sm-6 
+                    .image_menu.coffe_image.animation.left(data-value = "coffe")
+                        img(src="../../images/drink/coffe/header.jpeg", alt="")
+                        .info
+                            p.paragh_font View More
+                
+                .col-lg.col-sm-6 
+                    .image_menu.juices_image(data-value = "juices")
+                        img(src="../../images/drink/juices/1.jpeg", alt="")
+                        .info.two 
+                            p.paragh_font View More
+                .col-lg.col-sm-6 
+                    .image_menu.ice_cream_image.animation.right(data-value = "ice_cream")
+                        img(src="../../images/drink/ice_cream/header.jpeg", alt="")
+                        .info.three
+                            p.paragh_font View More
+                
+
+include ../mixin_All_Menus.pug
+- var coffe_array = ["src='../../images/drink/coffe/1.jpeg' title='Cheese coffe'data-large='30' data-meduim='15'","src='../../images/drink/coffe/3.jpeg'title='Blask Coffe'data-large='40' data-meduim='20'","src='../../images/drink/coffe/3.jpg'title='photo one'data-large='40' data-meduim='20'","src='../../images/drink/coffe/5.jpeg'title='Black Tea'data-large='30' data-meduim='15'","src='../../images/drink/coffe/7.jpeg'title='Green Tea'data-large='40' data-meduim='20'"]
+- var juices_array = ["src='../../images/drink/juices/5.jpeg' title='Cheese juices'data-large='30' data-meduim='15'","src='../../images/drink/juices/2.jpeg'title='New juices'data-large='30' data-meduim='15'","src='../../images/drink/juices/3.jpeg'title='big juices'data-large='40' data-meduim='20'","src='../../images/drink/juices/4.jpeg'title='Brown Liquid'data-large='40' data-meduim='20'","src='../../images/drink/juices/6.jpeg'title='New Apple juice'data-large='45' data-meduim='25'"]
+- var ice_cream_array =["src='../../images/drink/ice_cream/1.jpeg' title='Colorful Icecream'data-large='30' data-meduim='15'","src='../../images/drink/ice_cream/2.jpeg'title='New coffe'data-large='30' data-meduim='15'","src='../../images/drink/ice_cream/3.jpeg'title='Cup Of iceceam'data-large='40' data-meduim='20'","src='../../images/drink/ice_cream/4.jpeg'title='chooclete Icecream'data-large='40' data-meduim='20'"]
+
++menu("Hot Drinks Menu" , "coffe",coffe_array)
++menu("Juices Menu" , "juices",juices_array)
++menu("Ice Cream Menu" , "ice_cream" , ice_cream_array)
+
+
+// start options  page
+include ../../layout/options.pug
+// end options page
+
+
+// start scripts  page
+
+include ../../layout/scripts.pug
+script(src="../../js/food.js")
+
+// end scripts page
+
+
