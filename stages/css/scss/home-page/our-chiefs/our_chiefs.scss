@@ -4,7 +4,7 @@
     padding: 30px 0 30px 0;
     margin-bottom: 30px;
     h1{
-        font-size: 35px;
+        font-size: 20px;
         text-align: center;
         padding-bottom: 10px;
         //border-bottom: 2px solid $main-color;
@@ -22,6 +22,7 @@
                 letter-spacing: 1.8px;
                 line-height: 28px;
                 font-size: 18px;
+                margin-bottom: 30px;
             }
         }
         .image{
@@ -32,4 +33,12 @@
             }
         }
     }
+}
+
+@media(max-width:767px){
+    .our-chiefs h1{
+        font-size: 20px;
+    }
+    .chef1,.chef2 .paragraph p{font-size: 12px; font-weight: normal;}
+        
 }

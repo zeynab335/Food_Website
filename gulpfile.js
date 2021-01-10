@@ -11,6 +11,7 @@ var gulp   = require('gulp'),             // import gulp
     notify = require("gulp-notify"),
     zip = require('gulp-zip'),
     newer = require('gulp-newer');
+    imagemin = require('gulp-imagemin');
 
 
 // All tasks
@@ -117,9 +118,9 @@ var img_src = ['stages/images/**/*.jpg' , 'stages/images/**/*.jpeg' , 'stages/im
 return gulp.src(img_src)
     // reload changes 
     .pipe(gulp.dest('dist/images'))
-    .pipe(minify())
+    .pipe(imagemin())
     // notification of task
-    .pipe(notify('the end of images Task !--'))
+    //.pipe(notify('the end of images Task !--'))
     // live loader to watch any change 
     .pipe(livereload())
 })

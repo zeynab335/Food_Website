@@ -72,3 +72,10 @@
         // end color_option
     }
 }
+
+
+@media(max-width:767px){
+    .All_options>div.color_option .color_option_icon.active {
+        left: 186px;
+    }
+}

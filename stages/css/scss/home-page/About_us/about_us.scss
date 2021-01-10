@@ -11,6 +11,7 @@
 
         h1,h2{
             text-align: center;
+            margin-bottom: 20px;
 
         }
         .info{
@@ -28,5 +29,16 @@
         }
     }
 }
+@media(max-width:767px){
+    .about .container-fluid .info{
+        margin-left:0 ;
+        width: 100%;
+    }
+
+    .our-chiefs h1{
+        font-size: 20px;
+    }
+}
+
             
         

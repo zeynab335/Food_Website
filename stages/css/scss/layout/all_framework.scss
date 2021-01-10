@@ -8,12 +8,12 @@ $sec-color : #dddcd8;
 // strat heading and paragraph style
 
 .heading_font{
-    font: italic bold 25px auto;
+    font: italic bold 20px auto;
     font-family: 'Playfair Display', serif;
 }
 
 .paragh_font{
-    font: italic bold 20px auto;
+    font: italic bold 15px auto;
     font-family: 'Playfair Display', serif;
 }
 
@@ -45,7 +45,7 @@ $sec-color : #dddcd8;
         &.left{float: left; transform: translateX(25%);}
         &.right{float: right; transform: translateX(-25%);}
     }
-    p{margin-left: 20%;;display: inline-block; font-size: 35px;}
+    p{margin-left: 20%;;display: inline-block; font-size: 25px;}
 }
 // end  page_header
 
@@ -75,8 +75,9 @@ $sec-color : #dddcd8;
 @media (max-width : 575px){
     // start page header of all pages in smal and extra small mediia
     .page_header p {
-        margin-left: 15% !important;
-        font-size: 25px !important;
+        margin-left: 11% !important;
+
+        font-size: 20px !important;
     }
     // end page header of all pages in smal and extra small mediia
     .paragh_font{

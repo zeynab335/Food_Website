@@ -19,7 +19,7 @@
                 padding-left: 40px;
                 border-bottom: 1px solid $sec-color;
                 cursor: pointer;
-                font-size: 25px;
+                font-size: 20px;
 
                 &:last-of-type{
                     border-bottom: none;
@@ -39,16 +39,7 @@
         .menus_content_link{
             background-color: rgb(236, 236, 236);
             position: relative;
-            &::before{
-                content: '';
-                width: 10px ;
-                height: 10px;
-                position: absolute;
-                transform: translatex(-100%);
-                border-width : 28px ;
-                border-style : solid;
-                border-color: transparent $sec-color transparent transparent;
-            }
+        
             > div{
                 display: none;
                 padding-bottom: 5px;
@@ -89,5 +80,29 @@
             }
         }
         // end menus_content_link
+    }
+}
+
+
+// media of small and extra small pages
+@media(max-width:991px){
+    .All_Menus .content_menu .menus_content_link>div.drink_menu,
+    .All_Menus .content_menu .menus_content_link>div.candy_menu{
+        margin-top: 0;
+    }
+}
+
+@media(min-width:1000px){
+    .menus_content_link{
+        &::before{
+            content: '';
+            width: 10px ;
+            height: 10px;
+            position: absolute;
+            transform: translatex(-100%);
+            border-width : 28px ;
+            border-style : solid;
+            border-color: transparent $sec-color transparent transparent;
+        }
     }
 }

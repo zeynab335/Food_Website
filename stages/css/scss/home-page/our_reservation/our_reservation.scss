@@ -1,9 +1,8 @@
 .reservation{
     background-image: url("../../images/home-page/reservation.jpg");
-    background-attachment: fixed;
     background-size: cover;
     width: 100%;
-    height: 70vh;
+    height: 75vh;
     margin-bottom: 25px;
     position: relative;
     .overlay{
@@ -17,9 +16,9 @@
 
         .container{
             h1{
-                margin: 15% 0 10% 0;
+                margin: 10% 0 10% 0;
                 text-align: center;
-                font-size: 40px;
+                font-size: 35px;
             }
             .recerv_content{
                 background-color: white;
@@ -48,6 +47,7 @@
             }
             input{
                 border-radius: 0;
+                color: #1f1e1e;
             }
             select{
                 width: 100%;
@@ -55,12 +55,12 @@
                 font-size: 1rem;
                 font-weight: 400;
                 line-height: 1.5;
+                font-family: 'auto';
                 cursor: pointer;
                 option{
                     margin-top: 0;
                     font-size: 15px;
                 }
-
             }
 
             .btn_conf_rece{
@@ -69,7 +69,7 @@
                 border-radius: 0;
                 padding: 10px;
                 width: 250px;
-                margin-left: 40%;
+                margin-left: 36%;
                 margin-top: 35px;
                 &:hover{
                     background-color: #1f1e1e;
@@ -81,7 +81,10 @@
 }
 
 @media (max-width:767px){
+    .reservation .overlay .container h1{
+        font-size: 30px;
+    }
     .reservation .overlay .container .btn_conf_rece{
-        margin-left: 24%;
+        margin-left: 20%;
     }
 }
