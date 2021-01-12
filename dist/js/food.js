@@ -27,7 +27,6 @@ image_menu.forEach(menu_name => {
 menu_icon = document.querySelectorAll('.menu_content .info .right');
 menu_icon.forEach(icon_parent=>{
     icon_parent.onclick = function(){
-        icon_parent.children[0].classList.toggle('fas')
         icon_parent.children[0].classList.toggle('active')
 
     }
