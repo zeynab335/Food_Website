@@ -89,3 +89,16 @@ dark_mode_icon.onclick = function(){
 }
 
 // end dark mode
+
+
+///////////////////////////////////////////////////////
+
+/* start loading */
+
+window.onload = setInterval(function(){
+    
+    document.getElementById('loading').style.display = 'none';
+    
+},2000) 
+
+/* end loading */

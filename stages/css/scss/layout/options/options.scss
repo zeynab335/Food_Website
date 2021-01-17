@@ -51,14 +51,14 @@
                 transition: all 0.8s;
 
                 &.active{
-                    left: 255px;
+                    left: 300px;
                 }                
             }
 
             .color_option_content{
                 position: relative;
                 transition: all 0.8s;
-                left: -255px;
+                left: -300px;
                 background-color: $main-color;
 
                 &.active{
